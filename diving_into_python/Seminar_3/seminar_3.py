@@ -65,6 +65,8 @@
 # list_freinds = ['Славик', 'Алешка', 'Миша']
 
 # dict_freinds = variants_generator(list_things, list_freinds)
+# print(result_1(dict_freinds.copy())
+# result_2(dict_freinds.copy())
 
 
 
