@@ -2,7 +2,7 @@
 
 
 from sys import argv
-from modul_from_task1 import my_date
+from modul_to_task1 import my_date
 
 
 print(my_date(argv[1]))
