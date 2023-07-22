@@ -48,7 +48,7 @@ class Matrix():
         '''Перемножение матриц'''
 
         if len(self._matrix[0]) != len(other._matrix):
-            raise ArithmeticError('Сложение матриц разной размерности не поддерживается!')
+            raise ArithmeticError('Умножение матриц разной размерности не поддерживается!')
         else:
             result = []
             for i in range(len(self._matrix)):
@@ -92,59 +92,3 @@ if __name__ == '__main__':
     # Умножение матриц 
     # print(matrix_1 * matrix_3)
     # print(matrix_1 * matrix_4)
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def generate_matrix(size:int) -> list[list]:
-#     '''Создает матрицу заданной размерности и заполняет ее рандомными целыми числами'''
-
-#     matrix = []
-#     for _ in range(size):
-#         matrix.append([rand(1,9) for i in range(size)])
-
-#     return matrix
-
-
-# def print_matrix(matrix: list[list]):
-#     '''Красиво печатает матрицу'''
-
-#     for i in matrix:
-#         print(i)
-#     print('\n')
-
-
-# def transposes_matrix(matrix):
-#     '''Транспонирование матрицы'''
-
-#     transp_matrix = []
-#     for i in range(len(matrix)):
-#         temp_var = []
-#         for j in range(len(matrix)):
-#             temp_var.append(matrix[j][i])
-#         transp_matrix.append(temp_var)
-#     return transp_matrix
-
-
-# SIZE_MATRIX = 5
-# matrix = generate_matrix(SIZE_MATRIX)
-
-# print('Исходная матрица:')
-# print_matrix(matrix)
-
-# print('Транспонированная матрица:')
-# print_matrix(transposes_matrix(matrix))
-
-
